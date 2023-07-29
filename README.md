@@ -41,8 +41,8 @@ An app for visualizing a cleaning path, robot polygon and a cleaning gadget line
 ## Quick start
 
 ```bash
-# clone the repo from gitlab
-git clone https://gitlab.com/lucasgiglio/kaercher_roboticstest.git
+# clone the repo from github
+git clone https://github.com/lukegiglio/kaercher_roboticstest.git
 
 # change directory
 cd kaercher_roboticstest
