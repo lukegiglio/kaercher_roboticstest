@@ -1,0 +1,19 @@
+<div class="selection-container">
+    <p-panel>
+        <p-fieldset legend="Input settings">
+            <div class="form-grid-container">
+                <a>Upload a JSON file: </a>
+                <p-fileUpload #fUpload mode="basic" chooseLabel="Upload" accept=".json"
+                [customUpload]="true" (uploadHandler)="onUpload($event, fUpload)" [auto]="true"></p-fileUpload>
+            </div>
+            <div class="form-grid-container">
+                <a>Select the animation FPS: </a>
+                <p-slider [(ngModel)]="animationFps" class="w-full" [pTooltip]="animationFps.toString()"></p-slider>
+            </div>
+            <div class="form-grid-container">
+              <p-button icon="pi pi-send" label="Animate!" pTooltip="Anime path" (onClick)="onAnimate()"></p-button>
+            </div>
+        </p-fieldset>
+    </p-panel>
+</div>
+<p-toast position="top-right"></p-toast>
